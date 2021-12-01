@@ -15,6 +15,11 @@ function delTasks() {
     while (taskList.firstChild) {
         taskList.removeChild(taskList.firstChild)
     }
+    removeAllStorage()
+}
+// removeAllStorage
+function removeAllStorage(){
+    localStorage.removeItem('tasks')
 }
 
 //delTask
